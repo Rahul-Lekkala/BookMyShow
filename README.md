@@ -34,7 +34,7 @@ Create a mongodb database and add the URI in .env file(MONGODB_URI)
 Add a session secret(SESSION_SECRET)
 ```
 
-Install the dependencies and devDependencies
+Install the dependencies
 
 ```sh
 $ git clone https://github.com/Rahul-Lekkala/BookMyShow.git
@@ -47,3 +47,6 @@ Start the application
 $ nodemon app.js
 ```
 
+Go to localhost:3001/ to view the application
+
+Project deployed at: https://bookmovieonline.herokuapp.com/
