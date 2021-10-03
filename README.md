@@ -1,8 +1,5 @@
 # BookMyShow
 A simplified version of a movie booking website (like BookMyShow.com)
-<h1 align="center">
-BookMyShow
-</h1>
 <p align="center">
 MongoDB, Expressjs, Nodejs, Bootstrap, Vanilla JS
 </p>
