@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<%- include('partials/navbar') %>
+
+<div class="movies">
+      <% movies.forEach(function(movie){%>
+          <div class="movie" onClick="this.parentNode.submit()">
+            <h3><%=  movie.title  %></h3>
+            <div class="movie-image">
+                  <img src="<%= movie.imageURL %>" alt="<%= movie.title %>">
+            </div>
+            <p>Available in: <%=  movie.language  %></p>
+            <p>Genre: <%=  movie.genre  %></p>
+            <p>Duration: <%=  movie.duration  %></p>
+            <h4>About the movie: </h4>
+                  <p><%=  movie.description  %></p>
+            <h4>Cast: </h4>
+                  <p><%=  movie.cast  %></p>
+            <h4>Director: </h4>
+                  <p><%=  movie.director  %></p>
+          </div>
+       <% }) %>
+</div>  
+    
+<%- include('partials/footer') %>
+    

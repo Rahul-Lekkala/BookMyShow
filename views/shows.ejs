@@ -1,0 +1,41 @@
+<%- include('partials/header') %>
+
+<%- include('partials/navbar') %>
+
+<div class="shows">
+      <h1><%= movieName  %> </h1>
+      <% for (const [theatre, shows] of theatres.entries()) { %>
+            <div class="theatre">
+                  <h3><%=  theatre  %></h3>
+                  <% shows.forEach(function(show){%>
+                        <form action="/tickets/<%= show._id %>" method="POST">
+                              <input type="hidden" name="startTime" value="<%= show.startAt %>"></input>
+                              <input type="hidden" name="ticketPrice" value="<%= show.ticketPrice %>"></input>
+                              <!-- <input type="hidden" name="numberOfSeats" value=10></input> -->
+                              <input type="hidden" name="movieId" value="<%= show.movieId %>"></input>
+                              <input type="hidden" name="theatreId" value="<%= show.theatreId %>"></input>
+                              <input type="hidden" name="theatreName" value="<%= show.theaterName %>"></input>
+                              <input type="hidden" name="movieName" value="<%= show.movieName %>"></input>
+                        <div class="show">
+                              <h4><%=  show.startAt  %></h4>
+                              <h5>Seats: <%=  show.seatsAvailable  %></h5>
+                              <h5>Price: <%=  show.ticketPrice  %></h5>
+                              <p>Seats to book</p>
+                              <select class="form-select form-select-lg mb-3" aria-label=".form-select-sm example" name="numberOfSeats">
+                                    <option selected value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                              </select>
+                              <button type="submit" class="book-button btn btn-sm btn-dark">Book</button>
+                        </div>
+                        </form>
+                  <% }) %>
+            </div>
+       <% } %>
+</div>  
+ 
+<%- include('partials/footer') %>
+    

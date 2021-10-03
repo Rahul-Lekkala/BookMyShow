@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<%- include('partials/navbar') %>
+
+<div class="tickets">
+      <% tickets.forEach(function(ticket){%>
+          <div class="ticket-details">
+            <h3> Movie: <%=  ticket.movieName  %></h3>
+            <h3>Theatre: <%=  ticket.theatreName  %></h3>
+            <h3>at <%=  ticket.startTime  %></h3>
+            <h3>Seats Booked: <%=  ticket.numberOfSeats  %></h3>
+            <h3>Price per ticket: <%=  ticket.ticketPrice  %></h3>
+            <h3>Total Paid: <%=  ticket.totalPrice  %></h3>
+            <h3>BookingId: <%=  ticket._id  %></h3>
+          </div>
+        
+       <% }) %>
+</div>  
+    
+<%- include('partials/footer') %>
+    

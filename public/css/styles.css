@@ -1,0 +1,115 @@
+
+body {
+  background:#e3fdfd;
+  margin:0;
+  
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1{
+  text-align:center;
+  margin: 50px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 4em;
+  color: #56b8bd;
+}
+
+h2, h3, h4, h5{
+  font-family: 'Libre Baskerville', serif;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.movies{
+  width:90%;
+  margin: 50px auto;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+.movie{
+  position:relative;
+  margin: 20px;
+  padding: 20px;
+  background: #cbf1f5;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 3px 3px #888888;
+}
+
+.movie-image{
+  max-width:400px;
+  max-height: 400px;      
+}
+.movie-image>img{
+  width:100%;
+  max-height: 400px;
+  padding-bottom: 5px;
+}
+
+.shows{
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.show{
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  background: #cbf1f5;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 3px 3px #888888;
+}
+
+.theatre{
+  position:relative;
+  margin: 20px;
+  padding: 20px;
+  display:flex;
+  flex-direction:row;
+  background: #66d3df;
+  border-radius: 20px;
+  box-shadow: 3px 3px #c9c8c8;
+}
+
+.theatre>h3{
+  margin: auto 20px;
+}
+
+.book-button{
+  margin: 10px 5px 5px 0;
+}
+
+.tickets{
+  position:relative;
+  margin: 20px;
+  padding: 20px;
+  background: #cbf1f5;
+  border-radius: 20px;
+  box-shadow: 3px 3px #888888;
+}
+
+.ticket-details{
+  position:relative;
+  margin: 20px;
+  padding: 20px;
+  display:flex;
+  flex-direction:column;
+  background: #66d3df;
+  border-radius: 20px;
+  box-shadow: 5px 5px #c9c8c8;
+}
+
+.ticket-details>h3{
+  font-size: 1rem;
+}
